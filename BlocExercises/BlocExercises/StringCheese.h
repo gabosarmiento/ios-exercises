@@ -10,6 +10,7 @@
 
 @interface StringCheese : NSObject
 
+- (NSString *) favoriteCheeseStringWithCheese:(NSString *)cheeseName;
 /**
  Creates a sentence indicating a favorite cheese.
  
@@ -25,7 +26,7 @@
  
  @return Returns a full sentence indicating a favorite cheese.
  */
-- (NSString *) favoriteCheeseStringWithCheese:(NSString *)cheeseName;
+
 
 /**
  Removes "cheese" from the end of a string about cheese and only returns 

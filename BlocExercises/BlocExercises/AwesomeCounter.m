@@ -12,7 +12,18 @@
 
 - (NSString *) stringWithNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
     /* WORK HERE */
-    return @"";
+    NSMutableString *actualString = [@"" mutableCopy];
+    if (number <= otherNumber) {
+    while (number <= otherNumber){
+        [actualString appendFormat:[NSString stringWithFormat:@"%ld", (long)number++]];
+    }
+    } else if (number > otherNumber) {
+        while (otherNumber <= number){
+            [actualString appendFormat:[NSString stringWithFormat:@"%ld", (long)otherNumber++]];
+       
+        }
+    }
+    return actualString;
 }
 
 @end

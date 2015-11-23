@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface StuffRememberer : NSObject
-
+@property (nonatomic, strong) NSMutableArray *arrayToRemember;
+@property (nonatomic, copy) NSMutableArray *copiedArray;
+@property (assign) CGFloat floatToRemember;
 /*
  
  In this class, there are three pairs of methods.
